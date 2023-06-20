@@ -51,6 +51,23 @@ body {
     }
 }
 
+.mj-footer {
+    height: 30px;
+    background-color: #333333;
+}
+
+.mj-footer .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mj-footer span, .mj-footer a {
+    line-height: 30px;
+    font-size: 12px;
+    color: #fff;
+    font-weight: bold;
+}
+
 /*共有*/
 
 .mj-title {
@@ -108,8 +125,24 @@ body {
     font-weight: 700;
     font-size: 12px;
     line-height: 150%;
-    color: #F16662;
     margin-bottom: 5px;
+}
+
+.mj-card__head {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mj-card__time {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 150%;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.mj-card__ac_red {
+    color: #F16662;
 }
 
 .mj-card__title {

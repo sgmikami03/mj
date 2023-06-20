@@ -18,8 +18,7 @@
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100;200;300;400;500;600;700;800;900&display=swap"
         rel="stylesheet">
 
     <link rel="stylesheet" href="style.css">
@@ -56,38 +55,8 @@
     </div>
 
     <div class="container">
-        <br>
-        <h2 class="mj-title">一覧表示</h2>
-
-        <ul class="mj-cards">
-            <li class="mj-card">
-                <a href="">
-                    <div class="mj-card__head">
-                        <time class="mj-card__time">2001.01.01</time>
-                        <p class="mj-card__ac mj-card__ac_red">ステータスred</p>
-                    </div>
-                    <h4 class="mj-card__title">ああああああああああ</h4>
-                    <p class="mj-card__foot">
-                        <span class="mj-card__cat">カテゴリ</span>
-                        <span class="mj-card__more">もっと見る</span>
-                    </p>
-                </a>
-            </li>
-            <li class="mj-card">
-                <div class="mj-card__head">
-                    <time class="mj-card__time">2001.01.01</time>
-                    <p class="mj-card__ac mj-card__ac">ステータス</p>
-                </div>
-                <h4 class="mj-card__title">ああああああああああ</h4>
-                <p class="mj-card__foot">
-                    <span class="mj-card__cat">カテゴリ</span>
-                    <span class="mj-card__more">もっと見る</span>
-                </p>
-            </li>
-        </ul>
-
-        <br><br>
-
+        {% block content %}
+        {% endblock %}
     </div>
 
     <footer class="mj-footer">
@@ -96,7 +65,5 @@
             <a href="">スタッフログイン</a>
         </div>
     </footer>
-
 </body>
-
 </html>
