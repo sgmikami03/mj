@@ -186,3 +186,50 @@ body {
         width: 100%;
     }
 }
+
+/*btns*/
+
+.mj-btn_y {
+    display: inline-block;
+    width: 200px;
+    height: 56px;
+    line-height: 56px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    background-color: #F9D43F;
+    color: #fff;
+    border-radius: 28px;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+}
+
+.mj-btn_w {
+    display: inline-block;
+    width: 196px;
+    height: 56px;
+    line-height: 52px;
+    font-weight: 700;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #F9D43F;
+    background-color: #fff;
+    border-radius: 28px;
+    border: 2px solid #F9D43F;
+    box-shadow: 0px 4px 7px rgba(0, 0, 0, 0.15);
+}
+
+.mj-btn_w:hover {
+    color: #F9D43F;
+}
+
+.mj-btn_y:hover {
+    color: #fff;
+}
+.btn.btn-mj {
+    background-color: #fffF;
+    color: #F9D43F;
+    border: 2px solid #F9D43F;
+    font-weight: bold;
+}
