@@ -187,6 +187,104 @@ body {
     }
 }
 
+/*res-card*/
+
+.mj-res-cards {
+    list-style: none;
+    padding-left: 0;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    border: 1px solid #E7E7E7;
+}
+
+.mj-res-card {
+    display: flex;
+    justify-content: space-between;
+    padding: 15px;
+    align-items: center;
+    min-height: 100px;
+    border-bottom: 2px solid #E7E7E7;
+}
+
+.mj-res-cards .mj-res-card:last-child {
+    border-bottom: none;
+}
+
+.mj-res-card__title {
+    position: relative;
+    width: calc(100% - 130px - 250px);
+    padding-left: 50px;
+}
+
+.mj-res-card__title img {
+    position: absolute;
+    left: 0;
+    top: calc(50% - 12px);
+    width: 30px;
+}
+
+.mj-res-card__title date {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 12px;
+    margin-bottom: 10px;
+    line-height: 150%;
+}
+
+.mj-res-card__title h4 {
+    margin-bottom: 0;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.mj-res-card__status {
+    width: 130px;
+    height: 100%;
+    line-height: 70px;
+    font-size: 16px;
+    border-left: 2px solid #E7E7E7;
+    border-right: 2px solid #E7E7E7;
+    text-align: center;
+}
+
+.mj-res-card__status_red {
+    color: #F16662;
+}
+
+.mj-res-card__btns {
+    width: 200px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    .mj-res-card {
+        flex-wrap: wrap;
+    }
+
+    .mj-res-card__title {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    .mj-res-card__title h4 {
+        font-size: 16px;
+    }
+
+    .mj-res-card__status {
+        width: 100px;
+        line-height: 150%;
+        border: none;
+        text-align: left;
+    }
+
+    .mj-res-card__btns {
+        width: 200px;
+        text-align: right;
+    }
+}
+
+
 /*btns*/
 
 .mj-btn_y {
@@ -227,9 +325,13 @@ body {
 .mj-btn_y:hover {
     color: #fff;
 }
+
 .btn.btn-mj {
     background-color: #fffF;
     color: #F9D43F;
     border: 2px solid #F9D43F;
+    font-size: 16px;
+    padding-left: 10px;
+    padding-right: 10px;
     font-weight: bold;
 }
